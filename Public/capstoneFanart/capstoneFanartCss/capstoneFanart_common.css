@@ -1,0 +1,68 @@
+/*The styling properties for fixed navbar*/
+#navbar{
+	background: rgba(116, 0, 165, 0.95);
+	width: 100%;
+}
+
+#navbar a{
+	font-weight: 100;
+	margin: 0 10px;
+	transition: all 0.4s ease;
+}
+
+#navbar a:hover{
+	font-weight: 100;
+	transform: scale(1.01);
+	margin: 0 10px;
+	transition: all 0.4s ease;
+}
+
+#canvas-section .option-row{
+	width: 100%;
+}
+
+#facebook-link{
+	margin-right: 2vw;
+	background: #082fad;
+	max-height: 50px;
+	padding: 10px 3vw;
+	border: transparent;
+	border-radius: 15px;
+	text-align: center;
+	transition: all 0.4s ease;
+}
+
+#facebook-link:hover{
+	cursor: pointer;
+	background: #284fcd;
+}
+
+#facebook-link > a{
+	color: white;
+	font-weight: 100;
+	text-decoration: none;
+	transition: all 0.4s ease;
+}
+
+#instagram-link{
+	background: linear-gradient(90deg, #cd486b, #fbad50);
+	max-height: 50px;
+	padding: 10px 3vw;
+	border: transparent;
+	border-radius: 15px;
+	text-align: center;
+	transition: all 0.4s ease;
+}
+
+#instagram-link:hover{
+	cursor: pointer;
+	background-blend-mode: overlay;
+	background-color: rgba(255,255,255,0.1);
+}
+
+#instagram-link > a{
+	color: white;
+	font-weight: 100;
+	text-decoration: none;
+	transition: all 0.4s ease;
+}

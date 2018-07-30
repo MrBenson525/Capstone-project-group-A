@@ -1,0 +1,185 @@
+/*The styling properties for the canvas section*/
+#canvas-section{
+	overflow: hidden;
+	background: linear-gradient(30deg, #aaecef, #beffba);
+}
+
+#canvas{
+	position: absolute;
+	margin-top: 50px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #999;
+	border-radius: 30px;
+	background: #eee;
+	display: block;
+}
+
+#option-panel{
+	background: #888;
+	overflow: hidden;
+}
+
+#option-panel .option-row{
+	margin-bottom: 20px;
+}
+
+#option-panel .justify-button{
+	background: #888;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#option-panel .standard-button{
+	cursor: pointer;
+	background: transparent;
+	color: white;
+	border: solid 1px white;
+	border-radius: 10px;
+	margin: 0 1%;
+	padding: 5px 2vw;
+	text-align: center;
+	font-weight: 100;
+	transition: all 0.4s ease;
+}
+
+#option-panel .standard-button:hover{
+	background: white;
+	color: #444;
+}
+
+#drawing-bar #thickness{
+	margin: 0 10px;
+}
+
+#drawing-bar #colorPicker{
+	width: 50px;
+	height: 30px;
+	border-radius: 8px;
+	margin: 5px 10px;
+}
+
+#drawing-bar #dot-wrapper{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 30px;
+	width: 30px;
+	margin: 5px 0;
+	overflow: hidden;
+}
+
+#file-bar #download-button{
+	padding: 2vw;
+}
+
+#file-bar #background-setter{
+	display: wrap;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: 0 20px;
+	padding: 5px 15px;
+	border-radius: 10px;
+	background: #777;
+}
+
+#file-bar #uploaded-image{
+	margin: 0 -40px 0 0;
+	background: transparent;
+}
+
+#file-bar #image-submit{
+	cursor: pointer;
+	background: transparent;
+	border: transparent;	
+	color: white;
+	font-weight: 100;
+}
+
+#dot{
+	height: 10px;
+    width: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+#colorPlate{
+	height: 35px;
+	overflow: scroll;
+	overflow-x: hidden;
+	background: #888;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 20%;
+}
+
+#canvas-draft{
+	position: absolute;
+	margin-top: 50px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #999;
+	border-radius: 30px;
+	background: transparent;
+	z-index: 100;
+}
+
+#canvas-container{
+	height: 600px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#option-form .option-wrapper{
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+	border: solid 1px #555;
+	border-radius: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	cursor: pointer;
+}
+
+#brush-wrapper{
+	background-image: url("/image/brush.png");
+}
+
+#rect-wrapper{
+	background-image: url("/image/rect.png");
+}
+
+#circle-wrapper{
+	background-image: url("/image/circle.png");
+}
+
+#line-wrapper{
+	background-image: url("/image/line.png");
+}
+
+#curve-wrapper{
+	background-image: url("/image/curve.png");
+}
+
+#eraser-wrapper{
+	background-image: url("/image/eraser.png");
+}
+
+#option-form input{
+	visibility: hidden;
+	position: absolute;
+}
+
+#option-form .selected-radio{
+	background-color: rgba(81, 255, 124, 0.2);
+	background-blend-mode: overlay;
+}

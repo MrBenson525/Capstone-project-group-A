@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- links include all CSS files, bootstrap CSS CDN, and jQuery CDN -->
+	<link rel="stylesheet" type="text/css" href="/capstoneMain/capstoneMainCss/capstoneMain_reset.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneMain/capstoneMainCss/capstoneMain_common.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneMain/capstoneMainCss/capstoneMain_particles.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneMain/capstoneMainCss/capstoneMain_musicBar.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<title>Capstone webpage</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+		  <a class="navbar-brand" href="#">Your music journey in HK</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#">Main Page</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/capstoneFanart.html">Create your fan arts</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/capstoneAcc.html">Accommodation</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>		
+	</header>
+	<section id="intro-banner">
+		<h1>Feel the hype</h1>
+		<p>Witness the greatness of music bands in Hong Kong</p>
+		<h3 id="scrambleText"></h3>
+	</section>
+	<section id="intro-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-4" id="text-wrapper">
+					<h1>Our vision</h1>
+					<p>With the help of our sponsors, we believe Hong Kong can restore itself to its former glory in the music domain. Join us today.</p>
+					<p id="hiddenMessage"></p>
+				</div>
+				<div class="col-8" id="image-wrapper">
+					<div class="image-wrapper-small">
+						<img src="/image/spotify.png">
+						<img src="/image/googlePlayMusic.png">
+					</div>
+					<div class="image-wrapper-small">
+						<img src="/image/itunes.png">
+						<img src="/image/soundCloud.png">	
+					</div>
+				</div>	
+				<div id="particle-wrapper">
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>
+					<div class="particle"></div>		
+				</div>	
+			</div>
+		</div>
+	</section>	
+	<div class="container-fluid">
+		<section id="slideshow" class="row">
+			<div class="carousel slide col-12" data-ride="carousel" style="height: 100%; padding: 0 !important;">
+			  <div class="carousel-inner" style="height: 100%">
+			    <div class="carousel-item active" style="height: 100%" id="slide1">
+			    </div>
+			    <div class="carousel-item" id="slide2" style="height: 100%">
+			    </div>
+			    <div class="carousel-item" id="slide3" style="height: 100%">
+			    </div>
+			  </div>
+			</div>
+			<div class="text">
+				<h2>Visit the most popular bands in Hong Kong</h2>		
+				<p>With premium local accommodations and most importantly, a team that cares.</p>	
+			</div>
+			<div id='music-bars'>
+			    <span class="five"></span>
+			    <span class="six"></span>
+			    <span class="three"></span>
+			    <span class="six"></span>
+			    <span class="five"></span>
+			    <span class="six"></span>
+			    <span class="two"></span>
+			    <span class="one"></span>
+			    <span class="four"></span>
+			    <span class="one"></span>
+			    <span class="two"></span>
+			    <span class="six"></span>
+			    <span class="two"></span>
+			    <span class="six"></span>
+			    <span class="two"></span>
+			    <span class="five"></span>
+			    <span class="six"></span>
+			</div>
+		</section>
+	</div>
+	<section id="bands">
+		<section class="container-fluid band-banner">
+			<div class="row">
+				<div class="col-3">
+				</div>
+				<div class="col-9">	
+				</div>
+			</div>
+		</section>
+		<section id="band1">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-3 band-textblock">
+						<h1>Dear Jane</h1>
+						<p>Formed in 2003, the name Dear Jane was inspired by the "Dear John Letter". They have successfully transitioned from punk to pop music style in recent years.</p>
+					</div>
+					<div class="col-9 band-photo-bg">
+						<div class="band1-photo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid band-banner">
+			<div class="row">
+				<div class="col-3">
+				</div>
+				<div class="col-9">	
+				</div>
+			</div>
+		</section>
+		<section id="band2">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-9 band-photo-bg">
+						<div class="band2-photo">
+						</div>
+					</div>
+					<div class="col-3 band-textblock">
+						<h1>Supper Moment</h1>
+						<p>Starting out in 2006, Supper Moment was originally an underground music group, but quickly grew to become one of the most well-known bands in Hong Kong since 2010.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid band-banner">
+			<div class="row">
+				<div class="col-3">
+				</div>
+				<div class="col-9">	
+				</div>
+			</div>
+		</section>
+		<section id="band3">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-3 band-textblock">
+						<h1>C AllStar</h1>
+						<p>Organized in 2009, C AllStar underwent a successful conversion from a college band to an award-winning music group around 2010.</p>
+					</div>
+					<div class="col-9 band-photo-bg" id="band3-photo">
+						<div class="band3-photo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid band-banner">
+			<div class="row">
+				<div class="col-3">
+				</div>
+				<div class="col-9">	
+				</div>
+			</div>
+		</section>
+	</section>
+	<section id="googleMap">
+		<h1>Find the latest concert here</h1>
+		<div id="map"></div>
+	</section>
+	<section id="supportApi">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1>Search for local information</h1>
+					<p>Choose one of the search options below to get travelling information instantly</p>
+					<form id="searchForm">
+						<input type="text" placeholder="Country/region name" id="countryInput">
+						<input type="text" placeholder="Capital name" id="capitalInput">
+						<div id="optionWrapper">
+							<input type="submit" name="" class="btn">
+							<input type="reset" name="" class="btn">
+						</div>
+					</form>
+				</div>
+				<div class="col-12" id="searchResult">
+					<p id="currency"></p>
+					<p id="exchange"></p>
+					<p id="hkTime"></p>
+					<p id="userThanks"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="video">
+		<h1>Latest concerts</h1>
+		<p>One of Hong Kong's most famous bands performing at Hung Hom Stadium to a crowd of screaming fans</p>
+		<iframe src="https://www.youtube.com/embed/pUGZZJqDCM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="youtube"></iframe>
+	</section>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-4">
+					<h4>About Us</h4>
+					<p>Developers</p>
+					<p>Organization</p>
+					<p>Social media</p>
+					<p>Seminars</p>
+					<p>Contact us</p>
+				</div>
+				<div class="col-4">
+					<h4>Troubleshooting</h4>
+					<p>Report bugs</p>
+					<p>Network connectivity</p>
+					<p>Styling issues</p>
+					<p>Suggestions</p>
+				</div>
+				<div class="col-4">
+					<h4>Our sponsors</h4>
+					<p>Spotify</p>
+					<p>Google Play music</p>
+					<p>iTunes</p>
+					<p>Sound Cloud</p>
+					<p>Accelerate</p>
+					<p>Hong Kong Music Office</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- scripts include bootstrap and popperJS CDN links, JS file for country info search functionality, JS files for styling and google map API -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/capstoneMain/capstoneMainJs/capstoneMain_countryAPI.js"></script>
+	<script type="text/javascript" src="/capstoneMain/capstoneMainJs/capstoneMain_iconHover.js"></script>
+	<script type="text/javascript" src="/capstoneMain/capstoneMainJs/capstoneMain_scrambleText.js"></script>
+	<script src="/capstoneMain/capstoneMainJs/googleMapAPI.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDV3aZDOzTGqxlTG_jy87hvjwziLFCeCM&callback=initMap"
+    async defer></script>
+</body>
+</html>

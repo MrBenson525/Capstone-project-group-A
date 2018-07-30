@@ -1,0 +1,86 @@
+/*The styling properties of the countdown timer*/
+#stopwatch{
+	position: relative;
+	background: linear-gradient(165deg, #323cb5, #262e93, #262e93, #323cb5);
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
+#display{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 15vh;
+	border-radius: 10px;
+	border: solid 1px white;
+	margin: 50px;
+	overflow: hidden;
+}
+
+#display h1{
+	text-align: center;
+	font-size: 50px;
+	font-weight: 100;
+	color: white;
+}
+
+#display p{
+	text-align: center;
+	font-weight: 100;
+	color: white;
+}
+
+.keypad{
+	list-style-type: none;
+	margin: 0 10vh;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.keypad li{
+	padding: 2vh 8%;
+	border-radius: 5px;
+	border: solid 1px white;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.keypad li:hover{
+	cursor: pointer;
+	color: #0047ba;
+	background: white;
+	transition: all 0.3s ease;
+}
+
+#controller{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#controller button{
+	margin: 2vh 0;
+	padding: 1vh 10vw;
+	border: solid 1px white;
+	border-radius: 20px;
+	color: white;
+	background: rgba(0,0,0,0);
+}
+
+#controller button:hover{
+	cursor: pointer;
+	color: #0047ba;
+	background: white;
+	transition: all 0.3s ease;	
+}
+
+#time-limit-text{
+	margin-top: 5%;
+	text-align: center;
+	font-weight: 100;
+	font-size: 18px;
+	color: white;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- links include all custom CSS files, bootstrap CSS CDN link, jQuery CDN link -->
+	<link rel="stylesheet" type="text/css" href="/capstoneFanart/capstoneFanartCss/capstoneFanart_reset.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneFanart/capstoneFanartCss/capstoneFanart_common.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneFanart/capstoneFanartCss/capstoneFanart_timer.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneFanart/capstoneFanartCss/capstoneFanart_canvas.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneFanart/capstoneFanartCss/capstoneFanart_banner.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<title>Capstone Fan Art Creation</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+		  <a class="navbar-brand" href="#">Your music journey in HK</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/index.html">Main Page</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#">Create your fan arts</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/capstoneAcc.html">Accommodation</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>		
+	</header>
+	<section id="rules-banner">
+		<h2 class="banner-title">HKMO Fan Art Competition 2018</h2>
+		<p class="banner-text">The annual fan art competition will be held on 28th August. Till then, you can submit your fan art on social media to support the local bands and participate in the lucky draw.</p>
+		<p class="banner-text">Winners of this competition will receive a two-way ticket from Hong Kong to Las Vegas as the grand prize!</p>
+		<ul id="rules">
+			<li>Disclaimer</li>
+			<li>1. Copyright images produced will be owned by HKMO</li>
+			<li>2. No plagiarism allowed</li>
+			<li>3. Artwork must be submitted before 26th August 2018</li>
+			<li>4. The score given by the panel of judges will not be overwritten</li>
+			<li>5. HKMO reserve the right to overrule any decision in the competition</li>
+		</ul>
+	</section>
+	<section id="stopwatch">
+		<div id="display">
+			<h1></h1>
+			<p></p>
+		</div>
+		<ul class="keypad">
+			<li id="0" class="key">0</li>
+			<li id="1" class="key">1</li>
+			<li id="2" class="key">2</li>
+			<li id="3" class="key">3</li>
+			<li id="4" class="key">4</li>
+		</ul>
+		<ul class="keypad">
+			<li id="5" class="key">5</li>
+			<li id="6" class="key">6</li>
+			<li id="7" class="key">7</li>
+			<li id="8" class="key">8</li>
+			<li id="9" class="key">9</li>
+		</ul>
+		<div id="controller">
+			<button id="resetBtn" class="btn">Reset</button>
+			<button id="startBtn" class="btn">Start</button>			
+		</div>
+		<p id="time-limit-text">Time limit for the competition: 75 minutes</p>
+	</section>
+	<footer id="canvas-section">
+		<div id="canvas-container">
+			<canvas width="700" height="500" id="canvas"></canvas>
+			<canvas width="700" height="500" id="canvas-draft"></canvas>	
+		</div>
+		<div id="option-panel">
+			<div id="colorPlate" class="option-row">
+			</div>	
+			<div id="drawing-bar" class="option-row justify-button">
+				<button id="clearBtn" class="standard-button">Clear</button>
+				<button onclick="cUndo()" class="standard-button">Undo</button>
+				<button onclick="cRedo()" class="standard-button">Redo</button>
+				<input type="color" id="colorPicker">
+				<input type="range" id="thickness" min="1" max="15" oninput="changeDot()">
+				<span id="dot-wrapper">
+					<span id="dot"></span>
+				</span>
+				<button class="standard-button" onclick="addColor()">Save your color</button>
+			</div>
+			<div id="file-bar" class="option-row justify-button">
+				<button class="standard-button"><a id="download-button">Download</a></button>
+				<div id="background-setter">
+					<input type="file" accept=".jpg, .png" id="uploaded-image">
+					<input type="submit" value="Set Background" id="image-submit">
+				</div>
+			</div>
+			<div id="option-form" class="option-row justify-button">
+				<label id="brush-wrapper" class="option-wrapper selected-radio">
+					<input type="radio" id="brush" name="option" checked="checked">
+				</label>
+				<label id="rect-wrapper" class="option-wrapper">
+					<input type="radio" id="rect" name="option">
+				</label>
+				<label id="circle-wrapper" class="option-wrapper">
+					<input type="radio" id="circle" name="option">
+				</label>
+				<label id="line-wrapper" class="option-wrapper">
+					<input type="radio" id="line" name="option">
+				</label>
+				<label id="curve-wrapper" class="option-wrapper">
+					<input type="radio" id="curve" name="option">
+				</label>
+				<label id="eraser-wrapper" class="option-wrapper">
+					<input type="radio" id="eraser" name="option">
+				</label>
+				<input type="file" id="bg-import" accept="image/png, image/jpeg">
+				<input type="submit" value="Set Background Image" id="submitBackgroundImage" class="standard-button">
+			</div>	
+			<div class="option-row justify-button">
+				<button id="facebook-link"><a href="https://www.facebook.com/">Share to facebook</a></button>
+				<button id="instagram-link"><a href="https://www.instagram.com/">Share to Instagram</a></button>		
+			</div>
+		</div>
+	</footer>
+	<!-- scripts include CDN links for bootstrap and popperJS, countdown timer JS file, JS files for all classes for canvas -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_timer.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_commonClass.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_brush.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_circle.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_curve.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_eraser.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_functions.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_line.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_rect.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script type="text/javascript" src="/capstoneFanart/capstoneFanartJs/capstoneFanart_canvas_firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  // var config = {
+	  //   apiKey: "AIzaSyB-Jkrp7Syi-kxuwJ7q4PHEFRglMjacFCc",
+	  //   databaseURL: "https://accelerate-capstone-project.firebaseio.com",
+	  //   projectId: "accelerate-capstone-project",
+	  //   storageBucket: "accelerate-capstone-project.appspot.com"
+	  // };
+	  //return app object
+	  // var firebase = firebase.initializeApp(config);
+	  // let storageref = firebase.storage().ref()
+	</script>
+</body>
+</html>

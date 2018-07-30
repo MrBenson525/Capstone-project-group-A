@@ -1,0 +1,139 @@
+/*Styling properties for the todo list section */
+#todo-list{
+	margin-bottom: 150px;
+}
+
+#todo-list #list-container{
+	padding: 0 3vw;
+}
+
+#todo-list #list-container li{
+	margin: auto;
+}
+
+#todo-list h1{
+	color: white;
+	font-size: 4.5vh;
+	margin: 10vh 22vw 5vh 22vw;
+	font-weight: 100;
+	text-align: center;
+}
+
+#todo-list #control-wrap{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: 30px;
+}
+
+#todo-list #list-input{
+	background: rgba(0,0,0,0);
+	margin: 0 2vw;
+	width: 20vw;
+	padding: 10px;
+	border-radius: 20px;
+	border: solid 1px white;
+	color: white;
+}
+
+#todo-list #cost-input{
+	background: rgba(0,0,0,0);
+	margin: 0 2vw;
+	width: 20vw;
+	padding: 10px;
+	border-radius: 20px;
+	border: solid 1px white;
+	color: white;
+}
+
+#todo-list #list-adder{
+	background: rgba(0,0,0,0);
+	margin: 0 2vw;
+	padding: 10px 3vw;
+	border-radius: 10px;
+	border: solid 1px white;
+	color: white;
+	transition: all 0.4s ease;
+}
+
+#todo-list #list-adder:hover{
+	cursor: pointer;
+	background: white;
+	color: #444;
+	transition: all 0.4s ease;
+}
+
+#todo-list ul li.checked-item{
+    color: #afa;
+    text-decoration: line-through;
+    transition: all 0.5s ease;
+}
+
+#todo-list ul .close{
+	color: white;
+	margin-right: 2vw; 
+}
+
+#todo-list ul .cost{
+	color: white;
+	margin-left: 10%; 
+}
+
+#todo-list ul .edit-name{
+	color: white;
+	margin-left: 10%; 
+	opacity: 0.6;
+}
+
+#todo-list ul .edit-cost{
+	color: white;
+	margin-left: 10%; 
+	opacity: 0.6;
+}
+
+#todo-list ul .edit-name:hover{
+	opacity: 1;
+}
+
+#todo-list ul .edit-cost:hover{
+	opacity: 1;
+}
+
+#todo-list ul li{
+	cursor: pointer;
+	list-style-type: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 100;
+	border-radius: 20px;
+	border: solid 1px white;
+	margin: 20px;
+	margin-left: 0;
+	padding: 20px;
+	padding-left: 5vw; 
+	transition: all 0.5s ease;
+}
+
+#todo-list #budget{
+	margin: 5vh 0;
+	color: white;
+	font-weight: 100;
+	font-size: 20px;
+	text-align: center;
+}
+
+#todo-list .name-edit-mode{
+	border: solid 1px white;
+	background: rgba(0,0,0,0);
+	color: white;
+	font-weight: 100;
+}
+
+#todo-list .cost-edit-mode{
+	margin-left: 10%; 
+	border: solid 1px white;
+	background: rgba(0,0,0,0);
+	color: white;
+	font-weight: 100;
+}

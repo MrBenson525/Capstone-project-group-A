@@ -1,0 +1,45 @@
+/*The styling properties for all non-functionality sections*/
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: linear-gradient(165deg, #525cd5, #464eb3, #525cd5) !important;
+}
+
+/*Styling properties for top fixed navbar*/
+#navbar{
+	background: rgba(116, 0, 165, 0.95);
+	width: 100%;
+}
+
+#navbar a{
+	font-weight: 100;
+	margin: 0 10px;
+	transition: all 0.4s ease;
+}
+
+#navbar a:hover{
+	font-weight: 100;
+	transform: scale(1.01);
+	margin: 0 10px;
+	transition: all 0.4s ease;
+}
+
+#banner{
+	margin-top: 55px;
+}
+
+#banner h1{
+	margin: 15vh 22vw 5vh 22vw;
+	color: white;
+	font-weight: 100;
+	font-size: 5vh;
+	text-align: center;
+}
+
+#banner p{
+	margin: 0 22vw 12vh 22vw;
+	color: white;
+	font-weight: 100;
+	font-size: 2.5vh;
+	text-align: center;
+}

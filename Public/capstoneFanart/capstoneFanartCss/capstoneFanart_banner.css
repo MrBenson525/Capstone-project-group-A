@@ -1,0 +1,38 @@
+/*The styling properties for the banner*/
+#rules-banner{
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	height: 200%;
+	background-blend-mode: overlay;
+	background-color: rgba(0,255,245,0.7);
+	background-image: url("/image/graffiti.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 55px;
+}
+
+#rules-banner .banner-title{
+	font-weight: 100;
+	font-size: 50px;
+	font-style: italic;
+	color: #444;
+	margin: 10vh;
+}
+
+#rules-banner .banner-text{
+	font-weight: 100;
+	font-size: 20px;
+	color: #444;
+	margin: 3vh 6vh;
+	width: 50%;
+}
+
+#rules-banner #rules{
+	font-weight: 100;
+	font-size: 15px;
+	color: white;
+	margin-left: 65%;
+	width: 35%;
+}

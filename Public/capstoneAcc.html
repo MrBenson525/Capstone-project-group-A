@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- links include all custom CSS files, bootstrap CDN link, jQuery CDN link -->
+	<link rel="stylesheet" type="text/css" href="/capstoneAcc/capstoneAccCss/capstoneAcc_reset.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneAcc/capstoneAccCss/capstoneAcc_calculator.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneAcc/capstoneAccCss/capstoneAcc_todoList.css">
+	<link rel="stylesheet" type="text/css" href="/capstoneAcc/capstoneAccCss/capstoneAcc_common.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Accomodation and gadgets</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+		  <a class="navbar-brand" href="#">Your music journey in HK</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/index.html">Main Page</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/capstoneFanart.html">Create your fan arts</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#">Accommodation</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>		
+	</header>
+	<section id="banner">
+		<h1>Make sure you don't not blow your budget</h1>
+		<p>Use our built in gadgets to help you manage your travelling budget and schedule accomodations</p>
+	</section>
+	<section id="calculator">
+		<div id="cal-display"></div>
+		<div id="cal-button">
+			<div id="cal-num">
+				<div class="cal-row">
+					<div id="num9" data-role="number" class="cal-btn">9</div>
+					<div id="num8" data-role="number" class="cal-btn">8</div>
+					<div id="num7" data-role="number" class="cal-btn">7</div>
+					<div id="plus" data-role="operator" class="cal-btn">+</div>
+					<div id="delete" class="cal-btn" data-role="executor">C</div>
+				</div>
+				<div class="cal-row">
+					<div id="num6" data-role="number" class="cal-btn">6</div>
+					<div id="num5" data-role="number" class="cal-btn">5</div>
+					<div id="num4" data-role="number" class="cal-btn">4</div>
+					<div id="minus" data-role="operator" class="cal-btn">-</div>
+					<div id="deleteAll" class="cal-btn" data-role="executor">AC</div>
+				</div>
+				<div class="cal-row">
+					<div id="num3" data-role="number" class="cal-btn">3</div>
+					<div id="num2" data-role="number" class="cal-btn">2</div>
+					<div id="num1" data-role="number" class="cal-btn">1</div>
+					<div id="multiply" data-role="operator" class="cal-btn">*</div>
+					<div id="power" data-role="operator" class="cal-btn">^</div>
+				</div>
+				<div class="cal-row">
+					<div id="num0" data-role="number" class="cal-btn">0</div>
+					<div id="compute" class="cal-btn" data-role="executor">=</div>
+					<div id="divide" data-role="operator" class="cal-btn">/</div>
+					<div id="sqrt" data-role="operator" class="cal-btn">&radic;</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="todo-list">
+		<h1>To do list maker for your trip's budget</h1>
+		<div id="control-wrap">
+			<input type="text" id="list-input" placeholder="Checklist for your trip...">
+			<input type="number" id="cost-input" placeholder="Item cost..." min="0">
+			<button id="list-adder" onclick="newElement()">Add item</button>			
+		</div>
+		<h2 id="budget">The current budget needed for this arragement: $0</h2>
+		<ul id="list-container">
+		</ul>
+	</section>
+	<!-- scripts include bootstrap and popperJS CDN links, all custom JS files -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/capstoneAcc/capstoneAccJs/capstoneAcc_calculator.js"></script>
+	<script type="text/javascript" src="/capstoneAcc/capstoneAccJs/capstoneAcc_todoList.js"></script>
+</body>
+</html>
